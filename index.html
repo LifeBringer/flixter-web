@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍿 Flixster</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="header-title">🍿 Flixster</h1>
+    
+            <div class="search-wrapper">
+                <form id="search-form" autocomplete="off">
+                    <input class="search" type="text" placeholder="Search for Movies" id="search-input" alt="search area" />
+                    <button type="button" id="close-search-btn" class="close-button hidden" onclick="closeSearch()">
+                        <span class="sr-only"></span></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="main-layout">
+        <section id="movies-grid" class="section-layout ">
+            <h2>Now Playing</h2>
+            <ul id="now-playing-movies" class="movie-list"></ul>
+            <div class="load-more-movies-action">
+                <button id="load-more-movies-btn" class="hidden" onclick="loadMoreMovies()">Load more movies</button>
+                <button id="scroll-to-top-btn" class="hidden" onclick="scrollToTop()">Back to top</button>
+            </div>
+        </section>
+        <section id="search-section" class="section-layout hidden">
+            <h2>Search Results</h2>
+            <ul id="movie-search-results" class="movie-list"></ul>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
