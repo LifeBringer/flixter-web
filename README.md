@@ -40,13 +40,13 @@ Deployed Application: [Flixster Deployed Site](https://flixster-web.netlify.app/
 
 ### Walkthrough Video
 
-
+https://user-images.githubusercontent.com/1930836/170697659-2ab87532-208f-4b8a-8309-3627429a0cec.mp4
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes, asynchronous calls and the variants were essential for the success of this project. The pacing from html, css, and finally javascript was helpful in building up understanding of how to piece items together. The strech goals such as 'hover' should have been fleshed out better.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
@@ -64,3 +64,6 @@ Add your response here
 ### Shout out
 
 Codepath Staff, Codepath is a great place to learn and grow.
+
+
+
