@@ -246,6 +246,7 @@ font-weight: 500;
 
 
 .popup {
+z-index: 102;
 position: fixed;
 top: 0;
 left: 0;
@@ -256,6 +257,7 @@ color: #000000;
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 10px;
 }
 
 .movie-popup {
