@@ -13,6 +13,7 @@ color: #fff;
 }
 
 .header {
+z-index: 101;
 width: 100%;
 height: 80px;
 background: #333333;
@@ -117,6 +118,19 @@ transform: translate(-50%, -50%) rotate(45deg);
 #close-search-btn::after {
 transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+/* Persistent header */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .main-layout {
+    padding-top: 80px;
+}
+
+/* Persistent header end */
 
 .main-layout {
 max-width: 1200px;
