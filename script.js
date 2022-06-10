@@ -79,7 +79,7 @@ function displayMovies(movies, htmlElement) {
     const moviesHTMLString = movies.map(movie => `
         <li class="movie-card">
             <div class="movie-card-poster" onclick="selectMovie(${movie.id})">
-                <div class="movie-poster b-game-card__cover" alt="${movie.title}" title="${movie.title}" style="background-image: url(${imageBaseUrl}/w342${movie.posterPath});"></div>
+                <div class="movie-poster movie-poster-animation" alt="${movie.title}" title="${movie.title}" style="background-image: url(${imageBaseUrl}/w342${movie.posterPath});"></div>
             </div>
             <div class="movie-details">
                 <h3 class="movie-title">${movie.title}</h3>
