@@ -77,11 +77,13 @@ async function selectMovie(id) {
 
 function displayMovies(movies, htmlElement) {
     const moviesHTMLString = movies.map(movie => `
-        <li class="movie-card" onclick="selectMovie(${movie.id})">
-            <img class="movie-poster" src="${imageBaseUrl}/w342${movie.posterPath}" alt="${movie.title}" title="${movie.title}"/>
+        <li class="movie-card">
+            <div class="movie-card-poster" onclick="selectMovie(${movie.id})">
+                <div class="movie-poster b-game-card__cover" alt="${movie.title}" title="${movie.title}" style="background-image: url(${imageBaseUrl}/w342${movie.posterPath});"></div>
+            </div>
             <div class="movie-details">
                 <h3 class="movie-title">${movie.title}</h3>
-                <div class="movie-votes">${movie.voteAvg} / 10</div>
+                <div class="movie-votes">${((movie.voteAvg > 7.5) ? "🔥" : ((movie.voteAvg > 6.0) ? "🙂" : "🤢"))} &nbsp ${movie.voteAvg} / 10</div>
             </div>
         </li>
     `).join('');
@@ -110,7 +112,7 @@ function displayMoviePopup(movie) {
                     <p class="movie-specs">${movie.runtime} min | ${movie.releaseDate}</p>
                 </div>
                 <div class="movie-votes">
-                    <span>${movie.voteAvg}/10</span>
+                    <span>${((movie.voteAvg > 7.5) ? "🔥" : ((movie.voteAvg > 6.0) ? "🙂" : "🤢"))} &nbsp ${movie.voteAvg}/10</span>
                 </div>
             </section>
             <p class-"movie-overview">${movie.overview}</p>

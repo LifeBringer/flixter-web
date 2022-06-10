@@ -32,7 +32,7 @@ Deployed Application: [Flixster Deployed Site](https://flixster-web.netlify.app/
 
 #### STRETCH FEATURES
 
-- [x] Deploy website using GitHub Pages. 
+- [x] Deploy website using GitHub Pages.
 - [x] Allow user to view more details about a movie within a popup.
 - [x] Improve the user experience through CSS & animation.
 - [x] Allow movie video trailers to be played using [embedded YouTube](https://support.google.com/youtube/answer/171780?hl=en)
